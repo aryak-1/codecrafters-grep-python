@@ -37,7 +37,7 @@ def match_pattern(input_line, pattern):
             return not any(char in pattern for char in input_line)
         return any(char in pattern for char in input_line)
     else:
-        raise RuntimeError(f"Unhandled pattern: {pattern}")
+        #raise RuntimeError(f"Unhandled pattern: {pattern}")
         return match_pattern(input_line[1:], pattern)
 
 
